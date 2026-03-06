@@ -54,7 +54,7 @@ You can add a screenshot here after uploading your project.
 Example:
 
 ```
-LoginPage Screenshot - facebook-loginpage.png
+LoginPage Screenshot : facebook-loginpage.png
 ```
 
 ---
