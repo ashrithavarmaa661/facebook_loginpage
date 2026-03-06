@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facebook Signup</title>
+  <link rel="stylesheet" href="page.css">
+  
+  
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Logo">
+    </div>
+
+    <div class="form-box">
+      <h1>Create a new account</h1>
+      <p>It’s quick and easy.</p>
+      <hr />
+
+      <form id="signupForm" onsubmit="return validateForm();">
+
+<div class="input-group">
+  <input type="text" name="firstName" placeholder="First name" required />
+  <input type="text" name="lastName" placeholder="Surname" required />
+</div>
+
+<input type="text" name="email" placeholder="Mobile number or email address" required />
+<input type="password" name="password" placeholder="New password" required />
+
+<label>Date of birth</label>
+<div class="dob">
+  <select name="day">
+    <option>Day</option>
+    <script>
+      for (let i = 1; i <= 31; i++) document.write(`<option>${i}</option>`);
+    </script>
+  </select>
+
+  <select name="month">
+    <option>Month</option>
+    <option>Jan</option><option>Feb</option><option>Mar</option>
+    <option>Apr</option><option>May</option><option>Jun</option>
+    <option>Jul</option><option>Aug</option><option>Sep</option>
+    <option>Oct</option><option>Nov</option><option>Dec</option>
+  </select>
+
+  <select name="year">
+    <option>Year</option>
+    <script>
+      for (let y = 2025; y >= 1905; y--) document.write(`<option>${y}</option>`);
+    </script>
+  </select>
+</div>
+
+<label>Gender</label>
+<div class="gender">
+  <label><input type="radio" name="gender" value="Female" /> Female</label>
+  <label><input type="radio" name="gender" value="Male" /> Male</label>
+  <label><input type="radio" name="gender" value="Custom" /> Custom</label>
+</div>
+
+<button type="submit" class="signup-btn">Sign Up</button>
+
+</form>
+    </div>
+  </div>
+
+
+
+  <script src="page.js"></script>
+
+
+</body>
+
+</html>

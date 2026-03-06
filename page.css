@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 30px 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.form-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.form-box h1 {
+  font-size: 28px;
+  color: #1c1e21;
+}
+
+.form-box p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #606770;
+}
+
+hr {
+  margin: 10px 0 20px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccd0d5;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  width: 100%;
+}
+
+.dob,
+.gender {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.dob select,
+.gender label {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.gender label:last-child {
+  margin-right: 0;
+}
+
+.gender input {
+  margin-right: 5px;
+}
+
+.terms {
+  font-size: 12px;
+  color: #777;
+  margin: 10px 0;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #00a400;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: #007e00;
+}
